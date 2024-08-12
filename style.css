@@ -65,6 +65,7 @@ header {
 .parallax h2 {
     z-index: 100;
     text-align: center;
+    margin-top: 40px;
 }
 
 #text {
