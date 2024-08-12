@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Grey+Qo&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Grey+Qo&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: "Tajawal", sans-serif;
 }
 
 body {
@@ -82,17 +84,20 @@ body {
     padding: 5% 10%;
     color: #fff;
     direction: rtl;
+    font-family: "Tajawal", sans-serif;
 }
 
 .sec h2 {
     font-size: 2em;
     margin-bottom: 10px;
+    font-family: "Tajawal", sans-serif;
 }
 
 .sec p {
     font-size: 1em;
     font-weight: 300;
-    margin-top: 20px;
+    margin-top: 30px;
+    font-family: "Tajawal", sans-serif;
 }
 
 .sec span {
