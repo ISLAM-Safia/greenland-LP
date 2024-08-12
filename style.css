@@ -320,3 +320,13 @@ height: 33vh; /* يمكن تعديل القيمة */
 .parallax {
 height: 31vh; /* يمكن تعديل القيمة */
 }}
+
+@media (max-width: 300px) {
+    .parallax {
+    height: 26vh; /* يمكن تعديل القيمة */
+    }}
+
+    @media (max-width: 250px) {
+        .parallax {
+        height: 23vh; /* يمكن تعديل القيمة */
+        }}
