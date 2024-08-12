@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Grey+Qo&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background: rgba(255, 255, 255, 0.8); */
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: #359381;
+    font-family: "Grey Qo", cursive;
+}
+
+.menu-icon {
+    display: none;
+}
+.navigation a {
+    text-decoration: none;
+    color: #359381;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 5px;
+    font-weight: 600;
+}
+
+.navigation a:hover,
+.navigation a.active {
+    background-color: #359381;
+    color: #fff;
+}
+
+.parallax {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    /* background: url('images/background.jpg') no-repeat center center/cover; */
+}
+
+.parallax h2 {
+    z-index: 100;
+    text-align: center;
+}
+
+#text {
+    font-size: 3em;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+}
+
+#text i {
+    color: #003329;
+}
+
+#text span {
+    color: #003329;
+}
+
+.parallax img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    pointer-events: none;
+}
+
+.sec {
+    /* margin-top: 5rem; */
+    background: #003329;
+    padding: 5% 10%;
+    color: #fff;
+    direction: rtl;
+}
+
+.sec h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.sec p {
+    font-size: 1em;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.sec span {
+    color: #359381;
+}
+
+footer {
+    background-color: #1f1b1b;
+    color: #f9f9f9;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: .8em;
+}
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+font-size: 2rem;
+color: #359381;
+pointer-events: none;
+margin-right: 200px;
+font-family: "Grey Qo", cursive;
+/* font-family: "Edu VIC WA NT Beginner", cursive; */
+
+}
+
+.navigation a {
+text-decoration: none;
+color: #359381;
+padding: 6px 15px;
+border-radius: 20px;
+margin: 0 10px  ;
+font-weight: 600;
+}
+
+.navigation a:hover ,
+.navigation a.active {
+background-color: #359381;
+color: #fff;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1200px) {}
+@media (max-width: 768px) {
+    .logo {
+        font-size: 1.2rem;
+    }
+    .parallax {
+height: 70vh; /* يمكن تعديل القيمة */
+}
+    .navigation a {
+        padding: 4px 10px;
+        font-size: 0.9rem;
+    }
+
+    .parallax h2 {
+        font-size: 1.5em;
+    }
+
+    .sec h2 {
+        font-size: 1.8em;
+    }
+
+    .sec p {
+        font-size: 0.9em;
+    }
+    footer p {
+        font-size: .6em;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1rem;
+    }
+
+    .navigation a {
+        padding: 3px 8px;
+        font-size: 0.8rem;
+    }
+
+    .parallax h2 {
+        font-size: 1.2em;
+    }
+
+    .sec h2 {
+        font-size: 1.5em;
+    }
+
+    .sec p {
+        font-size: 0.8em;
+    }
+    footer p {
+        font-size: .6em;
+    }
+
+}
+@media (max-width: 400px) {
+    nav {
+    display: none;
+}
+header {
+    justify-content: space-between;
+}
+.menu-icon {
+    display:block;
+    color: #003329;
+    background-color: #f9f9f9;
+    padding: 5px;
+    border-radius: 5px;
+}
+footer p {
+        font-size: .5em;
+    }
+}
+/* للأجهزة الكبيرة (أجهزة الكمبيوتر المكتبية) */
+@media (min-width: 1200px) {
+.parallax {
+height: 100vh;
+}
+}
+@media (max-width: 991px)  {
+.parallax {
+height: 86vh; /* يمكن تعديل القيمة */
+}
+.logo {
+margin-right: 80px;
+}
+#text {
+font-size: 2em;}
+
+}
+@media (max-width: 830px)  {
+.parallax {
+height: 77vh; /* يمكن تعديل القيمة */
+}
+.logo {
+margin-right: 50px;
+}
+header {
+/* justify-content: space-between; */
+
+}
+.navigation a {
+padding: 0;
+}
+}
+/* للأجهزة المتوسطة (الأجهزة اللوحية بالوضع الأفقي) */
+@media (max-width: 768px)  {
+.parallax {
+height: 74vh; /* يمكن تعديل القيمة */
+}
+}
+@media (max-width: 720px)  {
+.parallax {
+height: 70vh; /* يمكن تعديل القيمة */
+}
+#text {
+font-size: 1.7em;}
+
+.navigation a {
+padding: 0;
+}
+}
+
+@media (max-width: 670px)  {
+.parallax {
+height: 60vh; /* يمكن تعديل القيمة */
+}
+}
+@media (max-width: 600px)  {
+.navigation {
+margin-right: -5rem;
+display: none;
+}
+#text {
+font-size: 1.4em;
+}
+}
+
+
+@media (max-width: 575px) {
+.parallax {
+height: 50vh; /* يمكن تعديل القيمة */
+}
+}
+@media (max-width: 500px) {
+.parallax {
+height: 43vh; /* يمكن تعديل القيمة */
+}
+}
+@media (max-width: 410px) {
+.parallax {
+height: 37vh; /* يمكن تعديل القيمة */
+}
+header {
+padding: 3%;
+}
+.parallax #text {
+font-size: 1.1em;
+}
+}
+
+@media (max-width: 360px) {
+.parallax {
+height: 33vh; /* يمكن تعديل القيمة */
+}}
+@media (max-width: 330px) {
+.parallax {
+height: 31vh; /* يمكن تعديل القيمة */
+}}
